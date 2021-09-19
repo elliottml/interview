@@ -1,0 +1,30 @@
+Initalize local git repository
+	Put keys in .ssh
+	
+	$ git init
+	$ git add <file name>
+	$ git status
+	$ git commit -m "<message>"
+	$ git status
+	$ git branch -M <branch name>
+	$ git remote add origin <repo url (ssh)>
+	$ git push -u origin <branch name>
+	
+Basic Linux
+	1. who
+	2. df
+		quota
+	4. mkdir lab
+		chmod g+rwx lab
+		groupadd labgroup #may require sudo
+		chgrp labgroup lab
+		usermod -a -G labgroup <username>
+		
+Using a cluster
+	https://support.ceci-hpc.be/doc/
+	
+	1. https://help.rc.ufl.edu/doc/Sample_SLURM_Scripts
+	2. https://wiki.fysik.dtu.dk/niflheim/Slurm_accounting
+	5. https://slurm.schedmd.com/sreport.html
+		https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/resource-usage/
+		
