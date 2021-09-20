@@ -28,3 +28,39 @@ Using a cluster
 	5. https://slurm.schedmd.com/sreport.html
 		https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/resource-usage/
 		
+Access and account management
+	2. groupadd rcss
+		useradd <username>
+		usermod -a -G rcss
+	
+Storage management
+	1. df -help
+	2. https://phoenixnap.com/kb/linux-create-partition
+		https://www.thegeekdiary.com/how-to-create-an-xfs-filesystem/
+	
+		check /dev for new device
+		sudo fdisk -l	#lists all disks, look for one with no partion info
+		sudo fdisk /dev/<new disk name>
+			n #new partition
+			defaults for partiton number and first sector, ask about last sector
+			w #write to disk
+		mkfs.xfs <dev name> OR mkfs –t xfs <dev name>
+	3. sudo mount <path to dev> <mount point>
+	4. ?
+	5. I'm sure there's an easier way then checking each node
+	6. https://carleton.ca/scs/2019/extend-lvm-disk-space/
+	
+Network and services
+	1. ifconfig
+	2. https://www.unixmen.com/how-to-find-default-gateway-in-linux/
+	3. grep "nameserver" /etc/resolv.conf
+	4. https://www.java67.com/2012/12/unix-command-to-find-ip-address-from-hostname.html
+		ping rhn.missouri.edu OR nslookup <hostname>
+	6. https://serverfault.com/questions/16839/how-do-i-get-apache-to-startup-at-bootime-on-linux
+		https://www.techiecorner.com/104/how-to-auto-start-apache-during-boot-time-linux/
+	7. https://www.cyberciti.biz/faq/how-do-i-find-out-what-ports-are-listeningopen-on-my-linuxfreebsd-server/
+		https://www.tecmint.com/find-listening-ports-linux/
+	8. https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/security_guide/sec-viewing_current_status_and_settings_of_firewalld
+		https://opensource.com/article/18/9/linux-iptables-firewalld
+	9. https://linuxconfig.org/redhat-8-open-http-port-80-and-https-port-443-with-firewalld
+	
