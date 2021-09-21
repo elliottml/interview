@@ -1,3 +1,4 @@
+#! /bin/python
 # python 3.9.7
 
 def main():

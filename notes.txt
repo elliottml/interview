@@ -1,3 +1,5 @@
+http://docs.rnet.missouri.edu
+
 Initalize local git repository
 	Put keys in .ssh
 	
@@ -10,10 +12,22 @@ Initalize local git repository
 	$ git remote add origin <repo url (ssh)>
 	$ git push -u origin <branch name>
 	
+Pull
+	$ git pull <clone ssh from github>
+	
+Login
+	ssh -YC <username>@lewis.rnet.missouri.edu
+	
+File transfer
+	rsync or scp
+	
 Basic Linux
 	1. who
 	2. df
 		quota
+		
+		http://docs.rnet.missouri.edu/howto/#check-storage-usage-quotas
+		
 	4. mkdir lab
 		chmod g+rwx lab
 		groupadd labgroup #may require sudo
@@ -27,6 +41,8 @@ Using a cluster
 	2. https://wiki.fysik.dtu.dk/niflheim/Slurm_accounting
 	5. https://slurm.schedmd.com/sreport.html
 		https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/resource-usage/
+		http://docs.rnet.missouri.edu/howto/#check-fairshare-and-accounts
+		http://docs.rnet.missouri.edu/howto/#find-quality-of-services-qos
 		
 Access and account management
 	2. groupadd rcss
@@ -64,3 +80,21 @@ Network and services
 		https://opensource.com/article/18/9/linux-iptables-firewalld
 	9. https://linuxconfig.org/redhat-8-open-http-port-80-and-https-port-443-with-firewalld
 	
+Transfer from/to local
+	We recommend that you use the rsync command with the following options to transfer files to Lewis:
+	
+	rsync -rltvPh /source/path <username>@lewis4-dtn.rnet.missouri.edu:/destination/path
+	Here are what the various flags mean:
+
+	-r: recursive
+	-l: links
+	-t: time
+	-v: verbose
+	-P: progress
+	-h: human readable
+	
+	And the following to transfer files from Lewis:
+
+	rsync -rltvPh <username>@lewis4-dtn.rnet.missouri.edu:/source/path /destination/path
+	
+	Note that you should run this command from a local terminal not from Lewis.
