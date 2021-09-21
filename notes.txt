@@ -22,11 +22,14 @@ File transfer
 	rsync or scp
 	
 Basic Linux
+	http://docs.rnet.missouri.edu/software/linux-intro/
+
 	1. who
 	2. df
 		quota
 		
 		http://docs.rnet.missouri.edu/howto/#check-storage-usage-quotas
+		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#users-information
 		
 	4. mkdir lab
 		chmod g+rwx lab
@@ -38,11 +41,16 @@ Using a cluster
 	https://support.ceci-hpc.be/doc/
 	
 	1. https://help.rc.ufl.edu/doc/Sample_SLURM_Scripts
+		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#job-submission
+		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#job-arrays
 	2. https://wiki.fysik.dtu.dk/niflheim/Slurm_accounting
+		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#monitoring-jobs
+		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#monitor-cpu-and-memory
 	5. https://slurm.schedmd.com/sreport.html
 		https://docs.ycrc.yale.edu/clusters-at-yale/job-scheduling/resource-usage/
 		http://docs.rnet.missouri.edu/howto/#check-fairshare-and-accounts
 		http://docs.rnet.missouri.edu/howto/#find-quality-of-services-qos
+		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#cluster-information
 		
 Access and account management
 	2. groupadd rcss
