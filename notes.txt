@@ -1,5 +1,7 @@
 http://docs.rnet.missouri.edu
 
+http://git-scm.com/book/en/v2
+
 Initalize local git repository
 	Put keys in .ssh
 	
@@ -39,6 +41,7 @@ Basic Linux
 		
 Using a cluster
 	https://support.ceci-hpc.be/doc/
+	http://slurm.schedmd.com/
 	
 	1. https://help.rc.ufl.edu/doc/Sample_SLURM_Scripts
 		http://docs.rnet.missouri.edu/lewis-and-clark-clusters/#job-submission
@@ -80,6 +83,8 @@ Network and services
 	3. grep "nameserver" /etc/resolv.conf
 	4. https://www.java67.com/2012/12/unix-command-to-find-ip-address-from-hostname.html
 		ping rhn.missouri.edu OR nslookup <hostname>
+	5. https://www.2daygeek.com/install-apache-httpd-web-server-on-linux/
+		
 	6. https://serverfault.com/questions/16839/how-do-i-get-apache-to-startup-at-bootime-on-linux
 		https://www.techiecorner.com/104/how-to-auto-start-apache-during-boot-time-linux/
 	7. https://www.cyberciti.biz/faq/how-do-i-find-out-what-ports-are-listeningopen-on-my-linuxfreebsd-server/
